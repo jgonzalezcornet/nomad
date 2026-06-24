@@ -11,7 +11,7 @@ export function Stats() {
       <div className="mx-auto grid max-w-6xl grid-cols-2 gap-8 px-6 py-10 sm:grid-cols-4">
         {stats.map((stat) => (
           <div key={stat.label} className="text-center">
-            <p className="font-display text-3xl font-bold text-sage-700">
+            <p className="font-display text-3xl font-extrabold text-sage-700">
               {stat.value}
             </p>
             <p className="mt-1 text-sm text-muted">{stat.label}</p>

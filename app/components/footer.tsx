@@ -23,7 +23,7 @@ export function Footer() {
           <div className="max-w-xs">
             <div className="flex items-center gap-2.5 text-ink">
               <Logo className="h-8 w-8 text-sage-600" />
-              <span className="font-display text-2xl font-bold tracking-tight">
+              <span className="font-display text-2xl font-extrabold tracking-tight">
                 Nomad
               </span>
             </div>

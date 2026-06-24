@@ -16,7 +16,7 @@ export function CTA() {
         />
 
         <div className="relative mx-auto max-w-2xl">
-          <h2 className="font-display text-4xl font-bold tracking-tight text-ink sm:text-5xl">
+          <h2 className="font-display text-4xl font-extrabold tracking-tight text-ink sm:text-5xl">
             Your next adventure starts here
           </h2>
           <p className="mt-5 text-lg text-muted">

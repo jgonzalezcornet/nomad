@@ -12,7 +12,7 @@ export function Nav() {
       <nav className="mx-auto flex h-20 max-w-6xl items-center justify-between px-6">
         <a href="#" className="flex items-center gap-2.5 text-ink">
           <Logo className="h-9 w-9 text-sage-600" />
-          <span className="font-display text-2xl font-bold tracking-tight">
+          <span className="font-display text-2xl font-extrabold tracking-tight">
             Nomad
           </span>
         </a>

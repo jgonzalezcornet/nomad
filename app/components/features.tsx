@@ -34,7 +34,7 @@ export function Features() {
         <p className="text-sm font-bold uppercase tracking-wide text-sage-600">
           Everything in one place
         </p>
-        <h2 className="mt-3 font-display text-4xl font-bold tracking-tight text-ink sm:text-5xl">
+        <h2 className="mt-3 font-display text-4xl font-extrabold tracking-tight text-ink sm:text-5xl">
           Your trip, sorted end to end
         </h2>
         <p className="mt-4 text-lg text-muted">
@@ -52,7 +52,7 @@ export function Features() {
             <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-sage-100 text-sage-700 transition-colors group-hover:bg-sage-600 group-hover:text-cream">
               <feature.icon className="h-6 w-6" />
             </div>
-            <h3 className="mt-5 font-display text-2xl font-bold text-ink">
+            <h3 className="mt-5 font-display text-2xl font-extrabold text-ink">
               {feature.title}
             </h3>
             <p className="mt-3 leading-relaxed text-muted">

@@ -53,7 +53,7 @@ export function Destinations() {
         <p className="text-sm font-bold uppercase tracking-wide text-sage-600">
           Inspiration
         </p>
-        <h2 className="mt-3 font-display text-4xl font-bold tracking-tight text-ink sm:text-5xl">
+        <h2 className="mt-3 font-display text-4xl font-extrabold tracking-tight text-ink sm:text-5xl">
           Where will your backpack take you?
         </h2>
         <p className="mt-4 text-lg text-muted">
@@ -90,7 +90,7 @@ export function Destinations() {
             </div>
 
             <div className="relative">
-              <h3 className="font-display text-3xl font-bold">{dest.city}</h3>
+              <h3 className="font-display text-3xl font-extrabold">{dest.city}</h3>
               <p className="mt-1 text-cream/90">
                 Hostels from{" "}
                 <span className="font-bold">{dest.price}</span> /night

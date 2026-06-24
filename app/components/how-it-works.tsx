@@ -27,7 +27,7 @@ export function HowItWorks() {
           <p className="text-sm font-bold uppercase tracking-wide text-sage-300">
             How it works
           </p>
-          <h2 className="mt-3 font-display text-4xl font-bold tracking-tight sm:text-5xl">
+          <h2 className="mt-3 font-display text-4xl font-extrabold tracking-tight sm:text-5xl">
             From idea to route in three steps
           </h2>
         </div>
@@ -35,10 +35,10 @@ export function HowItWorks() {
         <div className="mt-14 grid gap-10 md:grid-cols-3">
           {steps.map((step) => (
             <div key={step.number} className="relative">
-              <span className="font-display text-5xl font-bold text-sage-500">
+              <span className="font-display text-5xl font-extrabold text-sage-500">
                 {step.number}
               </span>
-              <h3 className="mt-4 font-display text-2xl font-bold">
+              <h3 className="mt-4 font-display text-2xl font-extrabold">
                 {step.title}
               </h3>
               <p className="mt-3 leading-relaxed text-sage-100/80">

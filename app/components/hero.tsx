@@ -23,7 +23,7 @@ export function Hero() {
           </span>
 
           <h1
-            className="animate-rise mt-6 font-display text-5xl font-bold leading-[1.05] tracking-tight text-ink sm:text-6xl"
+            className="animate-rise mt-6 font-display text-5xl font-extrabold leading-[1.05] tracking-tight text-ink sm:text-6xl"
             style={{ animationDelay: "0.15s" }}
           >
             Plan your trip across Europe{" "}
@@ -95,7 +95,7 @@ function ItineraryCard() {
             <p className="text-xs font-semibold uppercase tracking-wide text-muted">
               Your trip
             </p>
-            <p className="font-display text-2xl font-bold text-ink">
+            <p className="font-display text-2xl font-extrabold text-ink">
               Backpacking Iberia
             </p>
           </div>
