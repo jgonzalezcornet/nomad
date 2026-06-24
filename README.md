@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Nomad 🧭
 
-## Getting Started
+Landing page de **Nomad**, un organizador de viajes con IA pensado para mochileros que recorren Europa. La app ayuda a planificar itinerarios, reservar hostels, comparar alternativas y comparar formas de moverte (auto, bus, tren, avión).
 
-First, run the development server:
+> ⚠️ Esto es **solo la landing page**. La webapp todavía no es funcional: los formularios y botones son decorativos.
+
+## Stack
+
+- [Next.js 16](https://nextjs.org) (App Router, Turbopack)
+- [Tailwind CSS v4](https://tailwindcss.com)
+- Tipografía [Fraunces](https://fonts.google.com/specimen/Fraunces) + [Inter](https://fonts.google.com/specimen/Inter) vía `next/font`
+- Diseño minimalista en paleta verde salvia + crema (sin imágenes externas)
+
+## Desarrollo
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abrí [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build   # build de producción
+npm start       # servir el build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Estructura
 
-## Learn More
+```
+app/
+├── layout.tsx          # fuentes + metadata
+├── globals.css         # paleta (sage/cream) + tokens Tailwind
+├── page.tsx            # composición de la landing
+└── components/
+    ├── nav.tsx
+    ├── hero.tsx        # incluye el mockup de itinerario en CSS
+    ├── stats.tsx
+    ├── features.tsx
+    ├── how-it-works.tsx
+    ├── destinations.tsx
+    ├── cta.tsx
+    ├── footer.tsx
+    └── icons.tsx       # iconos de línea (SVG inline)
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Deploy en Vercel
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Importá este repo en [vercel.com/new](https://vercel.com/new).
+2. Vercel detecta Next.js automáticamente — no hace falta configurar nada.
+3. Deploy. ✨
