@@ -8,8 +8,9 @@ Landing page de **Nomad**, un organizador de viajes con IA pensado para mochiler
 
 - [Next.js 16](https://nextjs.org) (App Router, Turbopack)
 - [Tailwind CSS v4](https://tailwindcss.com)
-- Tipografía [Fraunces](https://fonts.google.com/specimen/Fraunces) + [Inter](https://fonts.google.com/specimen/Inter) vía `next/font`
-- Diseño minimalista en paleta verde salvia + crema (sin imágenes externas)
+- Tipografía [Fredoka](https://fonts.google.com/specimen/Fredoka) + [Nunito](https://fonts.google.com/specimen/Nunito) vía `next/font`
+- Diseño minimalista en paleta verde salvia + crema
+- Copy en inglés; fotos de ciudades en `public/destinations/` (Unsplash)
 
 ## Desarrollo
 

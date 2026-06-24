@@ -1,6 +1,6 @@
 import { ArrowRight, Check } from "./icons";
 
-const perks = ["Gratis para empezar", "Sin tarjeta", "Cancelás cuando quieras"];
+const perks = ["Free to start", "No card required", "Cancel anytime"];
 
 export function CTA() {
   return (
@@ -16,26 +16,26 @@ export function CTA() {
         />
 
         <div className="relative mx-auto max-w-2xl">
-          <h2 className="font-display text-4xl font-semibold tracking-tight text-ink sm:text-5xl">
-            Tu próxima aventura empieza acá
+          <h2 className="font-display text-4xl font-bold tracking-tight text-ink sm:text-5xl">
+            Your next adventure starts here
           </h2>
           <p className="mt-5 text-lg text-muted">
-            Sumate a la lista de espera y sé de los primeros en planear viajes
-            por Europa con Nomad.
+            Join the waitlist and be one of the first to plan trips across
+            Europe with Nomad.
           </p>
 
           <form className="mx-auto mt-8 flex max-w-md flex-col gap-3 sm:flex-row">
             <input
               type="email"
-              placeholder="tu@email.com"
+              placeholder="you@email.com"
               aria-label="Email"
               className="flex-1 rounded-full border border-sage-300/70 bg-cream px-5 py-3 text-ink placeholder:text-muted/70 focus:border-sage-500 focus:outline-none"
             />
             <button
               type="button"
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-sage-600 px-6 py-3 font-medium text-cream transition-colors hover:bg-sage-700"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-sage-600 px-6 py-3 font-bold text-cream transition-colors hover:bg-sage-700"
             >
-              Sumarme
+              Join now
               <ArrowRight className="h-4 w-4" />
             </button>
           </form>

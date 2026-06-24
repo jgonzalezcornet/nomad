@@ -1,44 +1,44 @@
 const steps = [
   {
     number: "01",
-    title: "Contanos tu viaje",
+    title: "Tell us about your trip",
     description:
-      "Destino, fechas, presupuesto y tu vibe. Mochilero relajado o ruta intensa: vos elegís el ritmo.",
+      "Destination, dates, budget and your vibe. Laid-back backpacker or intense route: you set the pace.",
   },
   {
     number: "02",
-    title: "La IA arma el plan",
+    title: "The AI builds the plan",
     description:
-      "En segundos tenés itinerario, hostels y transporte entre ciudades, todo balanceado a tu bolsillo.",
+      "In seconds you get an itinerary, hostels and transport between cities, all balanced to your budget.",
   },
   {
     number: "03",
-    title: "Reservá y partí",
+    title: "Book it and go",
     description:
-      "Ajustá lo que quieras, guardá todo en un solo lugar y salí con el plan en el bolsillo.",
+      "Tweak anything you want, keep it all in one place and hit the road with the plan in your pocket.",
   },
 ];
 
 export function HowItWorks() {
   return (
-    <section id="como-funciona" className="bg-sage-900 text-cream">
+    <section id="how-it-works" className="bg-sage-900 text-cream">
       <div className="mx-auto max-w-6xl px-6 py-24">
         <div className="max-w-2xl">
-          <p className="text-sm font-medium uppercase tracking-wide text-sage-300">
-            Cómo funciona
+          <p className="text-sm font-bold uppercase tracking-wide text-sage-300">
+            How it works
           </p>
-          <h2 className="mt-3 font-display text-4xl font-semibold tracking-tight sm:text-5xl">
-            De la idea a la ruta en tres pasos
+          <h2 className="mt-3 font-display text-4xl font-bold tracking-tight sm:text-5xl">
+            From idea to route in three steps
           </h2>
         </div>
 
         <div className="mt-14 grid gap-10 md:grid-cols-3">
           {steps.map((step) => (
             <div key={step.number} className="relative">
-              <span className="font-display text-5xl font-semibold text-sage-500">
+              <span className="font-display text-5xl font-bold text-sage-500">
                 {step.number}
               </span>
-              <h3 className="mt-4 font-display text-2xl font-semibold">
+              <h3 className="mt-4 font-display text-2xl font-bold">
                 {step.title}
               </h3>
               <p className="mt-3 leading-relaxed text-sage-100/80">

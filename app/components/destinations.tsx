@@ -1,100 +1,99 @@
+import Image from "next/image";
 import { MapPin } from "./icons";
 
 const destinations = [
   {
-    city: "Lisboa",
+    city: "Lisbon",
     country: "Portugal",
     price: "€16",
-    tag: "Miradores",
-    gradient: "from-sage-300 to-sage-600",
+    tag: "Viewpoints",
+    image: "/destinations/lisbon.jpg",
   },
   {
     city: "Barcelona",
-    country: "España",
+    country: "Spain",
     price: "€19",
-    tag: "Playa + ciudad",
-    gradient: "from-[#e0a87f] to-clay",
+    tag: "Beach + city",
+    image: "/destinations/barcelona.jpg",
   },
   {
-    city: "Praga",
-    country: "Chequia",
+    city: "Prague",
+    country: "Czechia",
     price: "€12",
-    tag: "Barata",
-    gradient: "from-sage-500 to-sage-800",
+    tag: "Budget-friendly",
+    image: "/destinations/prague.jpg",
   },
   {
-    city: "Ámsterdam",
-    country: "Países Bajos",
+    city: "Amsterdam",
+    country: "Netherlands",
     price: "€24",
-    tag: "Bici-friendly",
-    gradient: "from-sage-200 to-sage-500",
+    tag: "Bike-friendly",
+    image: "/destinations/amsterdam.jpg",
   },
   {
-    city: "Roma",
-    country: "Italia",
+    city: "Rome",
+    country: "Italy",
     price: "€20",
-    tag: "Historia",
-    gradient: "from-[#d6a06d] to-[#a85f3c]",
+    tag: "History",
+    image: "/destinations/rome.jpg",
   },
   {
-    city: "Berlín",
-    country: "Alemania",
+    city: "Berlin",
+    country: "Germany",
     price: "€17",
-    tag: "Vida nocturna",
-    gradient: "from-sage-400 to-sage-700",
+    tag: "Nightlife",
+    image: "/destinations/berlin.jpg",
   },
 ];
 
 export function Destinations() {
   return (
-    <section id="destinos" className="mx-auto max-w-6xl px-6 py-24">
-      <div className="flex flex-col justify-between gap-6 sm:flex-row sm:items-end">
-        <div className="max-w-2xl">
-          <p className="text-sm font-medium uppercase tracking-wide text-sage-600">
-            Inspiración
-          </p>
-          <h2 className="mt-3 font-display text-4xl font-semibold tracking-tight text-ink sm:text-5xl">
-            ¿A dónde te lleva la mochila?
-          </h2>
-          <p className="mt-4 text-lg text-muted">
-            Destinos favoritos de la comunidad, con precios reales de hostel por
-            noche.
-          </p>
-        </div>
+    <section id="destinations" className="mx-auto max-w-6xl px-6 py-24">
+      <div className="max-w-2xl">
+        <p className="text-sm font-bold uppercase tracking-wide text-sage-600">
+          Inspiration
+        </p>
+        <h2 className="mt-3 font-display text-4xl font-bold tracking-tight text-ink sm:text-5xl">
+          Where will your backpack take you?
+        </h2>
+        <p className="mt-4 text-lg text-muted">
+          Community favorites, with real hostel prices per night.
+        </p>
       </div>
 
       <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {destinations.map((dest) => (
           <article
             key={dest.city}
-            className="group relative flex aspect-[4/5] flex-col justify-between overflow-hidden rounded-3xl bg-gradient-to-br p-6 text-cream"
+            className="group relative flex aspect-[4/5] flex-col justify-between overflow-hidden rounded-3xl p-6 text-cream"
           >
-            <div
-              className={`absolute inset-0 bg-gradient-to-br ${dest.gradient}`}
-              aria-hidden="true"
+            <Image
+              src={dest.image}
+              alt={`${dest.city}, ${dest.country}`}
+              fill
+              sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+              className="object-cover transition-transform duration-500 group-hover:scale-105"
             />
             <div
-              className="grain absolute inset-0 opacity-20 mix-blend-overlay"
+              className="absolute inset-0 bg-gradient-to-t from-sage-900/85 via-sage-900/25 to-sage-900/10"
               aria-hidden="true"
             />
 
             <div className="relative flex items-center justify-between">
-              <span className="inline-flex items-center gap-1.5 rounded-full bg-cream/20 px-3 py-1 text-sm backdrop-blur-sm">
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-cream/20 px-3 py-1 text-sm font-semibold backdrop-blur-sm">
                 <MapPin className="h-3.5 w-3.5" />
                 {dest.country}
               </span>
-              <span className="rounded-full bg-cream/20 px-3 py-1 text-sm backdrop-blur-sm">
+              <span className="rounded-full bg-cream/20 px-3 py-1 text-sm font-semibold backdrop-blur-sm">
                 {dest.tag}
               </span>
             </div>
 
             <div className="relative">
-              <h3 className="font-display text-3xl font-semibold">
-                {dest.city}
-              </h3>
+              <h3 className="font-display text-3xl font-bold">{dest.city}</h3>
               <p className="mt-1 text-cream/90">
-                Hostels desde{" "}
-                <span className="font-semibold">{dest.price}</span> /noche
+                Hostels from{" "}
+                <span className="font-bold">{dest.price}</span> /night
               </p>
             </div>
           </article>

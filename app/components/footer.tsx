@@ -2,16 +2,16 @@ import { Logo } from "./icons";
 
 const columns = [
   {
-    title: "Producto",
-    links: ["Funciones", "Cómo funciona", "Destinos", "Precios"],
+    title: "Product",
+    links: ["Features", "How it works", "Destinations", "Pricing"],
   },
   {
-    title: "Compañía",
-    links: ["Sobre Nomad", "Blog", "Trabajá con nosotros", "Contacto"],
+    title: "Company",
+    links: ["About Nomad", "Blog", "Careers", "Contact"],
   },
   {
-    title: "Recursos",
-    links: ["Guías de viaje", "Comunidad", "Ayuda", "Privacidad"],
+    title: "Resources",
+    links: ["Travel guides", "Community", "Help", "Privacy"],
   },
 ];
 
@@ -21,21 +21,21 @@ export function Footer() {
       <div className="mx-auto max-w-6xl px-6 py-16">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-[1.5fr_repeat(3,1fr)]">
           <div className="max-w-xs">
-            <div className="flex items-center gap-2 text-ink">
-              <Logo className="h-7 w-7 text-sage-600" />
-              <span className="font-display text-xl font-semibold tracking-tight">
+            <div className="flex items-center gap-2.5 text-ink">
+              <Logo className="h-8 w-8 text-sage-600" />
+              <span className="font-display text-2xl font-bold tracking-tight">
                 Nomad
               </span>
             </div>
             <p className="mt-4 text-sm leading-relaxed text-muted">
-              El organizador de viajes con IA para mochileros que quieren
-              recorrer Europa sin estrés.
+              The AI travel planner for backpackers who want to explore Europe
+              without the stress.
             </p>
           </div>
 
           {columns.map((column) => (
             <div key={column.title}>
-              <h4 className="text-sm font-semibold text-ink">{column.title}</h4>
+              <h4 className="text-sm font-bold text-ink">{column.title}</h4>
               <ul className="mt-4 space-y-3">
                 {column.links.map((link) => (
                   <li key={link}>
@@ -53,8 +53,8 @@ export function Footer() {
         </div>
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-sage-900/5 pt-8 text-sm text-muted sm:flex-row">
-          <p>© 2026 Nomad. Todos los derechos reservados.</p>
-          <p>Hecho con ☕ y mate para mochileros.</p>
+          <p>© 2026 Nomad. All rights reserved.</p>
+          <p>Made with ☕ for backpackers.</p>
         </div>
       </div>
     </footer>

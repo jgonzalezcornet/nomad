@@ -15,46 +15,46 @@ export function Hero() {
       <div className="mx-auto grid max-w-6xl items-center gap-16 px-6 py-20 lg:grid-cols-[1.05fr_0.95fr] lg:py-28">
         <div>
           <span
-            className="animate-rise inline-flex items-center gap-2 rounded-full border border-sage-300/60 bg-paper px-4 py-1.5 text-sm text-sage-700"
+            className="animate-rise inline-flex items-center gap-2 rounded-full border border-sage-300/60 bg-paper px-4 py-1.5 text-sm font-semibold text-sage-700"
             style={{ animationDelay: "0.05s" }}
           >
             <Sparkles className="h-4 w-4 text-sage-600" />
-            Tu compañero de viaje con IA
+            Your AI travel companion
           </span>
 
           <h1
-            className="animate-rise mt-6 font-display text-5xl font-semibold leading-[1.05] tracking-tight text-ink sm:text-6xl"
+            className="animate-rise mt-6 font-display text-5xl font-bold leading-[1.05] tracking-tight text-ink sm:text-6xl"
             style={{ animationDelay: "0.15s" }}
           >
-            Planeá tu viaje por Europa{" "}
-            <span className="text-sage-600">sin perder el rumbo</span>.
+            Plan your trip across Europe{" "}
+            <span className="text-sage-600">without losing your way</span>.
           </h1>
 
           <p
             className="animate-rise mt-6 max-w-xl text-lg leading-relaxed text-muted"
             style={{ animationDelay: "0.25s" }}
           >
-            Nomad arma tu itinerario día por día, encuentra los hostels mejor
-            ubicados y compara cómo moverte entre ciudades. Vos solo hacé la
-            mochila.
+            Nomad builds your day-by-day itinerary, finds the best-located
+            hostels and compares how to get between cities. You just pack the
+            backpack.
           </p>
 
           <form
-            id="empezar"
+            id="get-started"
             className="animate-rise mt-8 flex max-w-md flex-col gap-3 sm:flex-row"
             style={{ animationDelay: "0.35s" }}
           >
             <input
               type="email"
-              placeholder="tu@email.com"
+              placeholder="you@email.com"
               aria-label="Email"
               className="flex-1 rounded-full border border-sage-300/70 bg-paper px-5 py-3 text-ink placeholder:text-muted/70 focus:border-sage-500 focus:outline-none"
             />
             <button
               type="button"
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-sage-600 px-6 py-3 font-medium text-cream transition-colors hover:bg-sage-700"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-sage-600 px-6 py-3 font-bold text-cream transition-colors hover:bg-sage-700"
             >
-              Empezar gratis
+              Get started
               <ArrowRight className="h-4 w-4" />
             </button>
           </form>
@@ -63,7 +63,7 @@ export function Hero() {
             className="animate-rise mt-4 text-sm text-muted"
             style={{ animationDelay: "0.45s" }}
           >
-            Gratis para empezar · Sin tarjeta · Hecho para mochileros
+            Free to start · No card required · Made for backpackers
           </p>
         </div>
 
@@ -86,30 +86,30 @@ function ItineraryCard() {
         aria-hidden="true"
       >
         <Sparkles className="h-4 w-4 text-clay" />
-        <span className="text-sm font-medium text-ink">Itinerario listo ✨</span>
+        <span className="text-sm font-bold text-ink">Itinerary ready ✨</span>
       </div>
 
       <div className="rounded-3xl border border-sage-200 bg-paper p-6 shadow-xl shadow-sage-900/10">
         <div className="flex items-center justify-between">
           <div>
-            <p className="text-xs uppercase tracking-wide text-muted">
-              Tu viaje
+            <p className="text-xs font-semibold uppercase tracking-wide text-muted">
+              Your trip
             </p>
-            <p className="font-display text-2xl font-semibold text-ink">
-              Mochileando Iberia
+            <p className="font-display text-2xl font-bold text-ink">
+              Backpacking Iberia
             </p>
           </div>
           <div className="rounded-2xl bg-sage-50 px-3 py-2 text-right">
-            <p className="text-xs text-muted">12 días</p>
-            <p className="font-semibold text-sage-700">€640</p>
+            <p className="text-xs text-muted">12 days</p>
+            <p className="font-bold text-sage-700">€640</p>
           </div>
         </div>
 
         <div className="mt-5 flex flex-wrap gap-2">
-          {["Lisboa", "Sevilla", "Barcelona"].map((city) => (
+          {["Lisbon", "Seville", "Barcelona"].map((city) => (
             <span
               key={city}
-              className="rounded-full bg-sage-100 px-3 py-1 text-sm text-sage-700"
+              className="rounded-full bg-sage-100 px-3 py-1 text-sm font-semibold text-sage-700"
             >
               {city}
             </span>
@@ -119,28 +119,30 @@ function ItineraryCard() {
         <ul className="mt-5 space-y-3">
           <ItineraryRow
             icon={<Bed className="h-4 w-4" />}
-            title="Hostel Sunset · Lisboa"
-            meta="Día 1–4 · €18/noche"
+            title="Sunset Hostel · Lisbon"
+            meta="Day 1–4 · €18/night"
           />
           <ItineraryRow
             icon={<Route className="h-4 w-4" />}
-            title="Bus nocturno a Sevilla"
+            title="Night bus to Seville"
             meta="6 h · €22 · -40% CO₂"
           />
           <ItineraryRow
             icon={<MapPin className="h-4 w-4" />}
             title="Free walking tour"
-            meta="Día 5 · Sevilla"
+            meta="Day 5 · Seville"
           />
         </ul>
 
         <div className="mt-5 rounded-2xl bg-sage-50 p-4">
-          <p className="text-xs text-muted">La IA comparó por vos</p>
+          <p className="text-xs font-semibold text-muted">
+            The AI compared it for you
+          </p>
           <div className="mt-2 flex items-end gap-2">
             <Bar label="Bus" value="h-10" highlight />
-            <Bar label="Tren" value="h-16" />
-            <Bar label="Auto" value="h-12" />
-            <Bar label="Avión" value="h-8" />
+            <Bar label="Train" value="h-16" />
+            <Bar label="Car" value="h-12" />
+            <Bar label="Plane" value="h-8" />
           </div>
         </div>
       </div>
@@ -163,7 +165,7 @@ function ItineraryRow({
         {icon}
       </span>
       <div className="min-w-0">
-        <p className="truncate text-sm font-medium text-ink">{title}</p>
+        <p className="truncate text-sm font-bold text-ink">{title}</p>
         <p className="text-xs text-muted">{meta}</p>
       </div>
     </li>
@@ -186,7 +188,7 @@ function Bar({
           highlight ? "bg-sage-500" : "bg-sage-200"
         }`}
       />
-      <span className="text-[10px] text-muted">{label}</span>
+      <span className="text-[10px] font-semibold text-muted">{label}</span>
     </div>
   );
 }

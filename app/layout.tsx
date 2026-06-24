@@ -1,23 +1,23 @@
 import type { Metadata } from "next";
-import { Fraunces, Inter } from "next/font/google";
+import { Fredoka, Nunito } from "next/font/google";
 import "./globals.css";
 
-const fraunces = Fraunces({
-  variable: "--font-fraunces",
+const fredoka = Fredoka({
+  variable: "--font-fredoka",
   subsets: ["latin"],
   display: "swap",
 });
 
-const inter = Inter({
-  variable: "--font-inter",
+const nunito = Nunito({
+  variable: "--font-nunito",
   subsets: ["latin"],
   display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Nomad — Planeá tu viaje por Europa con IA",
+  title: "Nomad — Plan your Europe trip with AI",
   description:
-    "Nomad arma tu itinerario, encuentra los mejores hostels, compara cómo moverte y se adapta a tu presupuesto. Tu compañero de viaje con inteligencia artificial.",
+    "Nomad builds your itinerary, finds the best hostels, compares how to get around and adapts to your budget. Your AI-powered travel companion.",
 };
 
 export default function RootLayout({
@@ -27,8 +27,8 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="es"
-      className={`${fraunces.variable} ${inter.variable} h-full antialiased`}
+      lang="en"
+      className={`${fredoka.variable} ${nunito.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
